@@ -1,4 +1,10 @@
 /* Global Layout Set-up */
+
+:root {
+  --primary-color: #2b68a1;
+  --secondary-color: #e0b354;
+  --white: #ffffff;
+}
 * {
   box-sizing: border-box;
 }
@@ -239,4 +245,51 @@ h3{
 
 .about-image:hover {
   transform: scale(1.2) rotate(360deg);
+}
+
+
+
+button,
+.button, .button1 {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-duration: 0.9s;
+  transition-property: opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: var(--secondary-color);
+  color: var(--black);
+}
+
+.navigation-list__item--active {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navigation-list__item {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.profile_portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
 }
