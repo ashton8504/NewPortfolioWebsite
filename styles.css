@@ -67,7 +67,7 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid black;
   transition: all .5s;
 }
 header .profile-image:hover {
@@ -226,4 +226,14 @@ h3{
 
 .contact-info{
   color: black;
+}
+
+.about-image{
+  border: solid black 3px;
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /*border: 3px solid white;*/
+  transition: all .5s;
 }
